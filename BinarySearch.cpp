@@ -39,3 +39,19 @@ void bubbleSortArray(){
         }pass++;
     } while (pass <= nPanjang - 1);
 }
+
+void display(){
+    cout << "\n======================= \n";
+    cout << " Pencarian Binary Search \n";
+    cout << "\n======================= \n";
+    
+    int low = 0;
+    int high = nPanjang - 1;
+
+    do
+    {
+        int mid = (low + high) / 2;
+        if (element[mid] == x)
+    } while (condition);
+    
+}
