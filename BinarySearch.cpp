@@ -40,7 +40,21 @@ void bubbleSortArray(){
     } while (pass <= nPanjang - 1);
 }
 
-void display(){
+void  display(){
+    cout << "\n====================================\n";
+    cout << " Element Array Setelah Diurutkan (Asc)";
+    cout << "==================================== \n";
+
+    for int (j = 0; j < nPanjang; j++){
+        cout << element[j];
+        if(j < nPanjang - 1){
+            cout << " --> ";
+        }
+    }
+    cout << endl;
+}
+
+void binarySearch(){
     cout << "\n======================= \n";
     cout << " Pencarian Binary Search \n";
     cout << "\n======================= \n";
@@ -51,7 +65,17 @@ void display(){
     do
     {
         int mid = (low + high) / 2;
-        if (element[mid] == x)
-    } while (condition);
-    
+        if (element[mid] == x){
+            cout << "\n [✓] Elemen" << x << "ditemukan pada indeks"<< mid <<"\n";
+            return;
+        }
+        if (x < element [mid]){
+            high = mid - 1;
+        }
+    } while (low <= high);
+    if (low > high){
+        cout << "\n [x] Elemen" << x << "tidak ditemukan dalam array.\n";
+    }
+    cout << "\n Ingin mecari lagi (y/n)";
+    cin >> ulang;
 }
