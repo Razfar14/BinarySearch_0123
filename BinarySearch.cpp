@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int element(10);
+int element[10];
 int nPanjang;
 int x;
 
@@ -45,7 +45,7 @@ void  display(){
     cout << " Element Array Setelah Diurutkan (Asc)";
     cout << "==================================== \n";
 
-    for int (j = 0; j < nPanjang; j++){
+    for  (int j = 0; j < nPanjang; j++){
         cout << element[j];
         if(j < nPanjang - 1){
             cout << " --> ";
@@ -60,6 +60,8 @@ void binarySearch(){
         cout << "\n======================= \n";
         cout << " Pencarian Binary Search \n";
         cout << "\n======================= \n";
+        cout << "Masukkan elemen yang ingin dicari: ";
+        cin >> x;
     
         int low = 0;
         int high = nPanjang - 1;
